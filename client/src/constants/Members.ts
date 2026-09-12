@@ -3,6 +3,8 @@ export interface Member {
   name: string;
   position?: string;
   imageUrl?: string;
+  /** CSS object-position for the card image, for photos whose default centre crop frames badly. */
+  imagePosition?: string;
   bio?: string;
   resumeUrl?: string;
   role?: "Faculty" | "Student" | "Co-Convener" | "Founder Leads";
@@ -472,7 +474,8 @@ export const members: Member[] = [
     team: "Tech",
     year: "3rd",
     imageUrl:
-      "https://res.cloudinary.com/deu1pbsug/image/upload/v1771091864/WhatsApp_Image_2026-02-13_at_9.47.44_PM_yjhgix.jpg",
+      "https://res.cloudinary.com/deu1pbsug/image/upload/v1789154016/shreshta_poga9b.jpg",
+    imagePosition: "center bottom",
     bio: "Awaiting the next tech horizon, where innovation meets its epitome",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/shrestha-chandra-787452311",
@@ -488,8 +491,8 @@ export const members: Member[] = [
     team: "Tech",
     year: "3rd",
     imageUrl:
-      "https://res.cloudinary.com/dyiohvauq/image/upload/v1769289010/aegis/Tech/2nd/vinay.webp",
-    bio: "I'm Vinay from 2nd year.",
+      "https://res.cloudinary.com/dbe8rhiyq/image/upload/v1789184656/WhatsApp_Image_2026-09-12_at_9.10.44_AM_hfusg3.jpg",
+    bio: "I'm Vinay from 3rd year.",
     socialLinks: {
       linkedin: "https://www.linkedin.com/in/vinay-madival-ab9059320",
       github: "https://github.com/VINAYMADIVAL",
@@ -832,6 +835,7 @@ export const members: Member[] = [
     year: "3rd",
     imageUrl:
       "https://res.cloudinary.com/deu1pbsug/image/upload/v1789154016/shreshta_poga9b.jpg",
+    imagePosition: "center bottom",
     bio: "Trust the Smooth Operation in making the simply lovely edit",
     socialLinks: { linkedin: "https://www.linkedin.com/in/shrestha-chandra-787452311/", email: "shrstha.2005@gmail.com" },
   },

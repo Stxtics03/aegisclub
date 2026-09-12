@@ -133,6 +133,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ member }) => {
                     src={member.imageUrl}
                     alt={member.name}
                     className="w-full h-full object-cover"
+                    style={{ objectPosition: member.imagePosition ?? "center" }}
                     onError={() => setImageError(true)}
                   />
                 )}
